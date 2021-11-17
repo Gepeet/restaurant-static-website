@@ -9,7 +9,7 @@
 /*/////////////// NAVIGATION for mobile*/
 
 nav {
-    width: 100vw;
+    width: 100%;
     background-color: whitesmoke;
     display: flex;
     justify-content: space-between;

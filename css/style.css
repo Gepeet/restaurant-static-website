@@ -5,16 +5,22 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*/////////////// NAVIGATION for mobile*/
 
 nav {
-    width: 100vw;
-    background-color: whitesmoke;
+    width: 100%;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding: 25px;
+    margin: auto;
 }
 
 .logo {
@@ -50,6 +56,15 @@ nav .navbar {
     cursor: pointer;
 }
 
+.wholepage{
+    max-width: 1400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /*///////////// HEADER */
 
 .hero {
@@ -60,8 +75,9 @@ nav .navbar {
     flex-direction: column;
 
     /* sizing */
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    max-height: 1000px;
 
     /* background image */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(inihaw\ na\ liempo.jpg);
@@ -86,7 +102,7 @@ nav .navbar {
 /* ////////////////SECTION PARAGRAPH */
 
 .s-p {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: whitesmoke;
@@ -104,7 +120,7 @@ nav .navbar {
 /*//////////// some of favorites */
 
 .s-favorites {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.918);
@@ -148,17 +164,10 @@ nav .navbar {
 
 /*///////////////////// PHOTOS */
 .grid{
-    display: grid;
-    gap: 1rem;
-    /* grid-template-columns: repeat(4,1fr); */
-
-    /* with minmax */
-    /* grid-template-columns: repeat(8, minmax(300px,1fr)); */
-
-    /* autofit */
-
-    grid-template-columns: repeat(auto,minmax(300px, 1fr));
-    grid-auto-rows: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* align-items: center; */
 }
 
 .grid.div{
@@ -176,7 +185,7 @@ nav .navbar {
     color: black;
     font-weight: 700;
     letter-spacing: 2px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 
@@ -188,7 +197,7 @@ nav .navbar {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.918);
-    width: 100vw;
+    width: 100%;
     padding: 60px 0px;
 }
 
@@ -320,8 +329,9 @@ footer{
     
         /* autofit */
     
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 300px;
+        grid-template-columns: 40% 40%;
+        grid-auto-rows: 500px;
+        grid-auto-columns: 300px;
     }
 
     .tall-l{
