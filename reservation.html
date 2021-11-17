@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+    <nav>
+        <h3><a href="menu.html" class="link">Menu</a> </h3>
+        <h1><a href="index.html" class="logo">Sarap Resto</a></h1>
+        <h3><a href="reservation.html" class="link">Reservation</a> </h3>
+        <div class="navbar">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <section>
+        <div class="instruction">
+            <h1>Reservations</h1>
+            <p>For parties of six or more, we recommend making reservations at least two weeks in advance.</p>
+            <p>Due to covid restrictions, we only accept a maximum of 10 people for parties.</p>
+        </div>
+        <div class="form">
+            <form>
+                <label for="name">Name</label><br>
+                <div class="fullname">
+                    <input type="text" id="name" name="name" placeholder="First Name" required class="fn-l">
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required class="fn-r"><br>
+                
+                </div>
+                <label for="phone">Phone Number</label><br>
+                <input type="text" maxlength="11" id="phone" name="phone" required><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="date">Date</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <label for="guest">Number of Guest</label><br>
+                <input type="text" name="guest" id="guest" required maxlength="2" placeholder="Maximum of 10 pax"><br>
+                <label for="request">Special Request</label><br>
+                <input type="text" name="request" id="request"><br>
+                <button id="submit"> SUBMIT</button>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+                <h1>Facebook</h1>
+                <h1 class="mid">Twitter</h1>
+                <h1>Intagram</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

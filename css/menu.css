@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*/////////////// NAVIGATION for mobile*/
+
+nav {
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 25px;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+nav h3{
+    display: none;
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30px;
+    width: 50px;
+}
+
+.navbar span{
+    height: 4px;
+    width: 50px;
+    background-color: black;
+}
+
+.navbar:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+/* //////////SECTION OF MENU */
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+}
+
+/* BREAKFAST */
+
+/* TITLE */
+.b-title {
+    margin: 30px 0px;
+}
+.b-title h1 {
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.b-title h2{
+    color: gray;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* FOOOODS */
+
+.b-item{
+    padding: 10px 0px;
+}
+
+.b-item h2{
+    font-size: 18px;
+    color: rgb(27, 26, 26);
+}
+
+h2 span{
+    color: darkblue;
+    font-size: 12px;
+}
+
+.b-item p {
+    font-size: 14px;
+    color: rgb(87, 84, 84);
+}
+
+/* WHOLE DAY  */
+
+/* TITLE */
+
+.wd-title {
+    margin: 30px 0px;
+}
+.wd-title h1 {
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+
+/* FOOOODS */
+
+.wd-item{
+    padding: 10px 0px;
+}
+
+.wd-item h2{
+    font-size: 18px;
+    color: rgb(27, 26, 26);
+}
+
+h2 span{
+    color: darkblue;
+    font-size: 12px;
+}
+
+.wd-item p {
+    font-size: 14px;
+    color: rgb(87, 84, 84);
+}
+
+
+/*///////////// FOOTER */
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* SOCIAL */
+
+.social{
+    background-color:rgba(0, 0, 0, 0.918) ;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social h1{
+    color: grey;
+    font-size: 20px;
+}
+
+.social h1:hover{
+    color: honeydew;
+    cursor: pointer;
+}
+
+
+
+@media  (min-width: 900px){
+
+    /* NAVIGATION */
+
+    nav {
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav .navbar{
+        display: none;
+    }
+
+    nav h3{
+        display: block;
+    }
+
+    nav .link{
+        text-decoration: none;
+        color: black;
+    }
+
+    .link:hover{
+        opacity: .7;
+        cursor: pointer;
+    }
+
+    /* BREAKFAST */
+    
+    section{
+        align-items: center;
+    }
+
+    .bfast {
+        max-width: 700px;
+    }
+
+    .b-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-grow: 1;
+        flex-wrap: wrap;
+
+    }
+
+    .b-item{
+        max-width: 300px;
+    }
+
+    /* WHOLEDAY */
+
+    .whole-day {
+        margin-top: 40px;
+        max-width: 700px;
+    }
+
+    .wd-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-grow: 1;
+        flex-wrap: wrap;
+
+    }
+
+    .wd-item{
+        max-width: 300px;
+    }
+
+
+}
